@@ -4,21 +4,19 @@ import { AppModule } from './app.module';
 import { Transport } from '@nestjs/microservices';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule);
-
-  const conf = app.get<ConfigService>(ConfigService);
-
-  app.connectMicroservice({
+  const app = await NestFactory.createMicroservice(AppModule, {
     transport: Transport.TCP,
     options: {
-      port: conf.get('WORKER_MICROSERVICE_PORT'),
+      port: 5000,
       retryAttempts: 5,
       retryDelay: 3000,
-    }
+    },
   });
 
-  await app.startAllMicroservicesAsync();
-  
+  await app.listen(() => {
+    console.log('void');
+  });
+
   console.log('Microservice is listening');
 }
 bootstrap();

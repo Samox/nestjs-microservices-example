@@ -390,6 +390,13 @@
     tslib "1.11.1"
     uuid "7.0.1"
 
+"@nestjs/cqrs@^8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@nestjs/cqrs/-/cqrs-8.0.3.tgz#aedc7e98548f8240db84feab65af92edf6dbbf42"
+  integrity sha512-OVZ4yUcJCGnkpPD0gntzCLBd/4Nv6hFVioFMcARs/V7U7CbzraaBinT8+mr9XuoKj9aYX6XCI9qz0+KR8rMSqQ==
+  dependencies:
+    uuid "8.3.2"
+
 "@nestjs/microservices@^6.11.11":
   version "6.11.11"
   resolved "https://registry.yarnpkg.com/@nestjs/microservices/-/microservices-6.11.11.tgz#9bf24901827171bcba5c0b7181db3af42fe30794"
@@ -6421,6 +6428,11 @@ uuid@7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.1.tgz#95ed6ff3d8c881cbf85f0f05cc3915ef994818ef"
   integrity sha512-yqjRXZzSJm9Dbl84H2VDHpM3zMjzSJQ+hn6C4zqd5ilW+7P4ZmLEEqwho9LjP+tGuZlF4xrHQXT0h9QZUS/pWA==
+
+uuid@8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 uuid@^3.3.2:
   version "3.4.0"
